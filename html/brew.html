@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaffee Tracker ☕</title>
+    <link rel="stylesheet" href="../css/brew.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Kaffee Tracker ☕</h1>
+
+    <div class="box">
+
+        <h2>Heute getrunken:</h2>
+        <p id="cupDisplay" class="count">0 Tassen</p>
+
+        <input id="cupInput" type="number" placeholder="z.B. 1" min="1">
+
+        <button id="addCup" class="btn add">+ Tasse</button>
+        <button id="removeCup" class="btn remove">– Tasse</button>
+
+    </div>
+
+    <button onclick="window.location.href='dashboard.html'" class="back">Zurück</button>
+
+</div>
+
+<script src="../js/brew.js"></script>
+</body>
+</html>

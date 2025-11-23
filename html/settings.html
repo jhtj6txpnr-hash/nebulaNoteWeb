@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings ⚙️</title>
+    <link rel="stylesheet" href="../css/settings.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Settings ⚙️</h1>
+
+    <div class="box">
+        <label class="label">Dein Name:</label>
+        <input id="nameInput" type="text" placeholder="Name eingeben...">
+
+        <button id="saveName" class="btn blue">Speichern</button>
+    </div>
+
+    <div class="box">
+        <label class="label">Theme:</label>
+
+        <div class="themeRow">
+            <button class="themeBtn blue" data-color="blue"></button>
+            <button class="themeBtn green" data-color="green"></button>
+            <button class="themeBtn orange" data-color="orange"></button>
+            <button class="themeBtn purple" data-color="purple"></button>
+        </div>
+    </div>
+
+    <div class="box">
+        <label class="label">Dark Mode:</label>
+        <button id="toggleDark" class="btn purple">Dark Mode an/aus</button>
+    </div>
+
+    <button onclick="window.location.href='dashboard.html'" class="back">Zurück</button>
+
+</div>
+
+<button class="logoutBtn" onclick="logout()">
+    Logout🚪
+</button>
+
+<button id="deleteAccountBtn" class="danger-btn">Benutzer löschen</button>
+<div class="box">
+    <label class="label">Account Info</label>
+
+    <div class="infoRow">
+        <span class="infoTitle">Username:</span>
+        <span id="accName"></span>
+    </div>
+
+    <div class="infoRow">
+        <span class="infoTitle">Letzter Login:</span>
+        <span id="accLogin"></span>
+    </div>
+
+    <div class="infoRow">
+        <span class="infoTitle">Version:</span>
+        <span>v1.0.0</span>
+    </div>
+</div>
+<script src="/js/logout.js"></script>
+
+<script src="../js/settings.js"></script>
+
+<script src="/js/delete-user.js"></script>
+</body>
+</html>

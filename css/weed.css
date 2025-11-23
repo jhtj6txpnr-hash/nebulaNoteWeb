@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #0d0f0a, #000);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-shadow: 0 0 20px #00ff7f;
+}
+
+.box {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,255,127,0.4);
+}
+
+.stock {
+    font-size: 2rem;
+    margin: 10px 0 20px;
+    text-shadow: 0 0 15px #00ff7f;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.green {
+    border-color: #00ff7f;
+    color: #00ff7f;
+    background: rgba(0,255,127,0.1);
+}
+
+.green:hover {
+    background: rgba(0,255,127,0.2);
+    box-shadow: 0 0 15px #00ff7f;
+}
+
+.red {
+    border-color: #ff3b3b;
+    color: #ff5f5f;
+    background: rgba(255,0,0,0.1);
+}
+
+.red:hover {
+    background: rgba(255,0,0,0.2);
+    box-shadow: 0 0 15px #ff4f4f;
+}
+
+.back {
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    background: rgba(255,255,255,0.05);
+    color: #ccc;
+}

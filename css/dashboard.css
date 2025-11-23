@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #05070d, #000);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px #4c6fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .25s;
+    font-weight: bold;
+}
+
+/* Glow Styles */
+.glow-green:hover {
+    box-shadow: 0 0 20px #00ff90;
+    border-color: #00ff90;
+}
+
+.glow-orange:hover {
+    box-shadow: 0 0 20px #ffb05a;
+    border-color: #ffb05a;
+}
+
+.glow-blue:hover {
+    box-shadow: 0 0 20px #3a7bff;
+    border-color: #3a7bff;
+}
+
+.glow-purple:hover {
+    box-shadow: 0 0 20px #b45cff;
+    border-color: #b45cff;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Nebula Todos</title>
+    <link rel="stylesheet" href="/css/todo.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Todo-Liste ✔️</h1>
+
+    <div class="card">
+        <input type="text" id="todoInput" placeholder="Aufgabe eingeben...">
+        <button id="addBtn" class="glow-btn">Add</button>
+
+        <div class="todo-frame">
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+
+    <button onclick="window.location.href='dashboard.html'" class="glow-btn" style="margin-top:20px;">
+        zurück zum Dashboard
+    </button>
+</div>
+
+<script src="/js/todo.js"></script>
+</body>
+</html>

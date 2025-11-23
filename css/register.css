@@ -1,0 +1,77 @@
+/* ---- GLOBAL ---- */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0d19;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ---- Container ---- */
+.container {
+    width: 90%;
+    max-width: 360px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 30px;
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px rgba(100, 100, 255, 0.25);
+    text-align: center;
+}
+
+/* ---- Title ---- */
+.title {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    color: #9f6fff;
+    text-shadow: 0 0 15px rgba(159, 111, 255, 0.6);
+}
+
+/* ---- Inputs ---- */
+input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: #111122;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.25s;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #9f6fff;
+}
+
+/* ---- Button ---- */
+.btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #7d4dff;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #b084ff;
+}
+
+/* ---- Link ---- */
+a {
+    color: #9f6fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #a278ff;
+}

@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #070b15, #000);
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+#todoInput {
+    width: 80%;
+    margin-bottom: 12px;
+}
+
+#addBtn {
+    margin-left: 5px;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#todoList li {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 12px var(--glow);
+    animation: fadeIn .2s ease;
+}
+
+/* Glow Frame um die ganze Liste */
+.todo-frame {
+    padding: 20px;
+    border-radius: 18px;
+    border: 2px solid #3a7bff;
+    box-shadow: 0 0 25px #3a7bff, inset 0 0 15px #3a7bff;
+    margin-top: 20px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+#todoList li.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.todo-btn {
+    border: none;
+    background: transparent;
+    color: var(--glow);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px #3a7bff;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #3a7bff;
+    background: transparent;
+    color: white;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #3a7bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 15px #3a7bff;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 25px #3a7bff;
+}

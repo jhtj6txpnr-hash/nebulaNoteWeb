@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Weed Tracker 🌿</title>
+    <link rel="stylesheet" href="../css/weed.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Weed Tracker 🌿</h1>
+
+    <div class="box">
+
+        <h2>Vorrat:</h2>
+        <p id="stockDisplay" class="stock">0g</p>
+
+        <input id="amountInput" type="number" placeholder="Gramm eingeben" min="1">
+
+        <button id="addBtn" class="btn green">+ Hinzufügen</button>
+        <button id="removeBtn" class="btn red">– Abziehen</button>
+
+    </div>
+
+    <button onclick="window.location.href='dashboard.html'" class="back">Zurück</button>
+
+</div>
+
+<script src="../js/weed.js"></script>
+</body>
+</html>
